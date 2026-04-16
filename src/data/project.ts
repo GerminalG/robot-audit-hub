@@ -36,7 +36,7 @@ export const features = [
   {
     title: "Out-of-Stock Alert",
     description:
-      "The robot reads shelf tags using QR codes. If the space above a tag is empty, it sends an "Order More" MQTT message.",
+      'The robot reads shelf tags using QR codes. If the space above a tag is empty, it sends an "Order More" MQTT message.',
     icon: "📦",
   },
   {
