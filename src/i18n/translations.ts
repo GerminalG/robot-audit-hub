@@ -47,8 +47,26 @@ export interface Dictionary {
     subtitle: string;
     cardTitle: string;
     cardBody: string;
-    formPlaceholder: string;
     socialPlaceholder: string;
+    form: {
+      title: string;
+      nameLabel: string;
+      namePlaceholder: string;
+      emailLabel: string;
+      emailPlaceholder: string;
+      messageLabel: string;
+      messagePlaceholder: string;
+      submit: string;
+      hint: string;
+      errors: {
+        nameRequired: string;
+        nameTooLong: string;
+        emailInvalid: string;
+        emailTooLong: string;
+        messageRequired: string;
+        messageTooLong: string;
+      };
+    };
   };
   zoom: {
     title: string;
@@ -132,8 +150,26 @@ const en: Dictionary = {
     subtitle: "Have questions about Scanos? We'd love to hear from you.",
     cardTitle: "Get in Touch",
     cardBody: "Reach out to us via email for project inquiries, collaboration, or feedback.",
-    formPlaceholder: "A contact form may be added here in the future.",
     socialPlaceholder: "Additional social and contact details will be added here.",
+    form: {
+      title: "Send us an email",
+      nameLabel: "Name",
+      namePlaceholder: "Your full name",
+      emailLabel: "Email",
+      emailPlaceholder: "you@example.com",
+      messageLabel: "Message",
+      messagePlaceholder: "Tell us how we can help…",
+      submit: "Send email",
+      hint: "Submitting opens your email app with the message pre-filled — nothing is sent until you confirm.",
+      errors: {
+        nameRequired: "Please enter your name.",
+        nameTooLong: "Name must be 100 characters or fewer.",
+        emailInvalid: "Please enter a valid email address.",
+        emailTooLong: "Email must be 255 characters or fewer.",
+        messageRequired: "Please enter a message.",
+        messageTooLong: "Message must be 1000 characters or fewer.",
+      },
+    },
   },
   zoom: {
     title: "Zoom",
@@ -217,8 +253,26 @@ const sv: Dictionary = {
     subtitle: "Har du frågor om Scanos? Vi hör gärna från dig.",
     cardTitle: "Hör av dig",
     cardBody: "Kontakta oss via e-post för projektförfrågningar, samarbete eller feedback.",
-    formPlaceholder: "Ett kontaktformulär kan komma att läggas till här i framtiden.",
     socialPlaceholder: "Ytterligare sociala kanaler och kontaktuppgifter läggs till här.",
+    form: {
+      title: "Skicka ett e-postmeddelande",
+      nameLabel: "Namn",
+      namePlaceholder: "Ditt fullständiga namn",
+      emailLabel: "E-post",
+      emailPlaceholder: "du@exempel.se",
+      messageLabel: "Meddelande",
+      messagePlaceholder: "Berätta hur vi kan hjälpa till…",
+      submit: "Skicka e-post",
+      hint: "När du skickar öppnas ditt e-postprogram med meddelandet ifyllt — inget skickas förrän du bekräftar.",
+      errors: {
+        nameRequired: "Ange ditt namn.",
+        nameTooLong: "Namnet får vara högst 100 tecken.",
+        emailInvalid: "Ange en giltig e-postadress.",
+        emailTooLong: "E-postadressen får vara högst 255 tecken.",
+        messageRequired: "Skriv ett meddelande.",
+        messageTooLong: "Meddelandet får vara högst 1000 tecken.",
+      },
+    },
   },
   zoom: {
     title: "Zoom",
@@ -294,8 +348,26 @@ const zh: Dictionary = {
     subtitle: "对 Scanos 有任何疑问？欢迎与我们联系。",
     cardTitle: "保持联系",
     cardBody: "如有项目咨询、合作或反馈，请通过电子邮件与我们联系。",
-    formPlaceholder: "未来可能会在此添加联系表单。",
     socialPlaceholder: "更多社交与联系方式将在此处添加。",
+    form: {
+      title: "给我们发送邮件",
+      nameLabel: "姓名",
+      namePlaceholder: "您的全名",
+      emailLabel: "邮箱",
+      emailPlaceholder: "you@example.com",
+      messageLabel: "留言",
+      messagePlaceholder: "请告诉我们如何能帮到您…",
+      submit: "发送邮件",
+      hint: "提交后将打开您的邮件应用并预填内容 —— 在您确认前不会发送任何邮件。",
+      errors: {
+        nameRequired: "请输入您的姓名。",
+        nameTooLong: "姓名不能超过 100 个字符。",
+        emailInvalid: "请输入有效的电子邮箱地址。",
+        emailTooLong: "邮箱地址不能超过 255 个字符。",
+        messageRequired: "请输入留言内容。",
+        messageTooLong: "留言不能超过 1000 个字符。",
+      },
+    },
   },
   zoom: {
     title: "Zoom",
