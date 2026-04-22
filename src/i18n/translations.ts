@@ -47,8 +47,26 @@ export interface Dictionary {
     subtitle: string;
     cardTitle: string;
     cardBody: string;
-    formPlaceholder: string;
     socialPlaceholder: string;
+    form: {
+      title: string;
+      nameLabel: string;
+      namePlaceholder: string;
+      emailLabel: string;
+      emailPlaceholder: string;
+      messageLabel: string;
+      messagePlaceholder: string;
+      submit: string;
+      hint: string;
+      errors: {
+        nameRequired: string;
+        nameTooLong: string;
+        emailInvalid: string;
+        emailTooLong: string;
+        messageRequired: string;
+        messageTooLong: string;
+      };
+    };
   };
   zoom: {
     title: string;
