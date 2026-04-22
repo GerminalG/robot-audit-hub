@@ -280,21 +280,9 @@ const zh: Dictionary = {
         title: "缺货提醒",
         description: '机器人通过 QR 码读取货架标签。若标签上方为空，则发送 "Order More" MQTT 消息。',
       },
-      intruder: {
-        title: "入侵检测",
-        description: "若摄像头在晚上 9 点后检测到人体动作或人脸，将闪烁 LED 并将 5 秒日志上传至云端。",
-      },
-      docking: {
-        title: "精准货架对接",
-        description: "使用 ArUco 标记精确对准隐藏在货架下方的充电桩。",
-      },
-      priceTag: {
-        title: "价签校验",
-        description: "将视觉读取到的货架价格与云数据库中的价格比对，并标记差异。",
-      },
-      environmental: {
-        title: "环境审计",
-        description: "测量冷冻区的光照与温度，以确保冰柜未发生故障。",
+      itemRecognition: {
+        title: "物品识别",
+        description: "计算机视觉实时识别货架上的商品，实现精准的库存检查与错放检测。",
       },
       cloud: {
         title: "云端指挥中心",
