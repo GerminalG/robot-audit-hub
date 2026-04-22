@@ -169,7 +169,7 @@ const sv: Dictionary = {
   nav: { home: "Hem", contact: "Kontakt", zoom: "Zoom", toggleMenu: "Växla meny" },
   hero: {
     description:
-      "Scanos är ett robotik- och molnövervakningsprojekt för detaljhandeln med fokus på revision av butiker efter stängning. Systemet patrullerar butiken självständigt, övervakar lagerförhållanden, identifierar felplacerade varor, upptäcker säkerhetsrisker och rapporterar problem till ett centralt webbaserat kommandocenter.",
+      "Scanos är ett robotikprojekt för detaljhandeln som använder datorseende för att känna igen varor på hyllorna, markera felplacerade produkter och utlösa slut-i-lager-varningar — allt rapporteras till ett molnbaserat kommandocenter där chefer kan övervaka butiken med en blick.",
   },
   goal: {
     title: 'Granskaren för "Lager & Säkerhet" inom detaljhandeln',
