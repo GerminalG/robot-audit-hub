@@ -28,9 +28,6 @@ export const project = {
 export const features = [
   { id: "misplaced", icon: "🔍" },
   { id: "outOfStock", icon: "📦" },
-  { id: "intruder", icon: "🚨" },
-  { id: "docking", icon: "🎯" },
-  { id: "priceTag", icon: "🏷️" },
-  { id: "environmental", icon: "🌡️" },
+  { id: "itemRecognition", icon: "🤖" },
   { id: "cloud", icon: "☁️" },
 ] as const;

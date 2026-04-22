@@ -107,25 +107,10 @@ const en: Dictionary = {
         description:
           'The robot reads shelf tags using QR codes. If the space above a tag is empty, it sends an "Order More" MQTT message.',
       },
-      intruder: {
-        title: "Intruder Detection",
+      itemRecognition: {
+        title: "Item Recognition",
         description:
-          "If the camera detects human motion or a face after 9:00 PM, it flashes LEDs and records a 5-second log to the cloud.",
-      },
-      docking: {
-        title: "Precision Endcap Docking",
-        description:
-          "Uses ArUco markers to align precisely with a charging dock hidden under a shelf.",
-      },
-      priceTag: {
-        title: "Price Tag Validator",
-        description:
-          "Compares the shelf price read by vision with the price in the cloud database and flags discrepancies.",
-      },
-      environmental: {
-        title: "Environmental Audit",
-        description:
-          "Measures light levels and temperature in the frozen food section to ensure refrigerators have not failed.",
+          "Computer vision identifies products on shelves in real time, enabling accurate stock checks and misplacement detection.",
       },
       cloud: {
         title: "Cloud Command Center",
@@ -210,25 +195,10 @@ const sv: Dictionary = {
         description:
           'Roboten läser hyllskyltar med QR-koder. Om utrymmet ovanför en skylt är tomt skickas ett "Beställ mer"-MQTT-meddelande.',
       },
-      intruder: {
-        title: "Inkräktardetektering",
+      itemRecognition: {
+        title: "Objektigenkänning",
         description:
-          "Om kameran upptäcker mänsklig rörelse eller ett ansikte efter klockan 21:00 blinkar lysdioder och en 5-sekunders logg sparas i molnet.",
-      },
-      docking: {
-        title: "Precisionsdockning",
-        description:
-          "Använder ArUco-markörer för att exakt rikta in sig mot en laddstation gömd under en hylla.",
-      },
-      priceTag: {
-        title: "Validering av prislappar",
-        description:
-          "Jämför hyllpriset som läses av kameran med priset i molndatabasen och flaggar avvikelser.",
-      },
-      environmental: {
-        title: "Miljörevision",
-        description:
-          "Mäter ljusnivåer och temperatur i frysavdelningen för att säkerställa att kylanläggningar fungerar.",
+          "Datorseende identifierar produkter på hyllorna i realtid, vilket möjliggör korrekta lagerkontroller och upptäckt av felplacerade varor.",
       },
       cloud: {
         title: "Molnbaserat kommandocenter",
@@ -310,21 +280,9 @@ const zh: Dictionary = {
         title: "缺货提醒",
         description: '机器人通过 QR 码读取货架标签。若标签上方为空，则发送 "Order More" MQTT 消息。',
       },
-      intruder: {
-        title: "入侵检测",
-        description: "若摄像头在晚上 9 点后检测到人体动作或人脸，将闪烁 LED 并将 5 秒日志上传至云端。",
-      },
-      docking: {
-        title: "精准货架对接",
-        description: "使用 ArUco 标记精确对准隐藏在货架下方的充电桩。",
-      },
-      priceTag: {
-        title: "价签校验",
-        description: "将视觉读取到的货架价格与云数据库中的价格比对，并标记差异。",
-      },
-      environmental: {
-        title: "环境审计",
-        description: "测量冷冻区的光照与温度，以确保冰柜未发生故障。",
+      itemRecognition: {
+        title: "物品识别",
+        description: "计算机视觉实时识别货架上的商品，实现精准的库存检查与错放检测。",
       },
       cloud: {
         title: "云端指挥中心",
