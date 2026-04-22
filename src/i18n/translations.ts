@@ -107,25 +107,10 @@ const en: Dictionary = {
         description:
           'The robot reads shelf tags using QR codes. If the space above a tag is empty, it sends an "Order More" MQTT message.',
       },
-      intruder: {
-        title: "Intruder Detection",
+      itemRecognition: {
+        title: "Item Recognition",
         description:
-          "If the camera detects human motion or a face after 9:00 PM, it flashes LEDs and records a 5-second log to the cloud.",
-      },
-      docking: {
-        title: "Precision Endcap Docking",
-        description:
-          "Uses ArUco markers to align precisely with a charging dock hidden under a shelf.",
-      },
-      priceTag: {
-        title: "Price Tag Validator",
-        description:
-          "Compares the shelf price read by vision with the price in the cloud database and flags discrepancies.",
-      },
-      environmental: {
-        title: "Environmental Audit",
-        description:
-          "Measures light levels and temperature in the frozen food section to ensure refrigerators have not failed.",
+          "Computer vision identifies products on shelves in real time, enabling accurate stock checks and misplacement detection.",
       },
       cloud: {
         title: "Cloud Command Center",
