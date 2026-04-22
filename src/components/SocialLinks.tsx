@@ -1,11 +1,15 @@
+import { useTranslation } from "@/i18n/LanguageContext";
+
 interface SocialLinksProps {
   linkedin: string | null;
   github: string | null;
 }
 
 const SocialLinks = ({ linkedin, github }: SocialLinksProps) => {
+  const { t } = useTranslation();
+
   if (!linkedin && !github) {
-    return <span className="text-xs text-muted-foreground italic">Links coming soon</span>;
+    return <span className="text-xs italic text-muted-foreground">{t.team.linksComingSoon}</span>;
   }
 
   return (
@@ -15,7 +19,7 @@ const SocialLinks = ({ linkedin, github }: SocialLinksProps) => {
           href={linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-accent transition-colors"
+          className="text-muted-foreground transition-colors hover:text-accent"
           aria-label="LinkedIn"
         >
           <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -28,7 +32,7 @@ const SocialLinks = ({ linkedin, github }: SocialLinksProps) => {
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-accent transition-colors"
+          className="text-muted-foreground transition-colors hover:text-accent"
           aria-label="GitHub"
         >
           <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

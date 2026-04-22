@@ -1,45 +1,49 @@
 import { Link } from "react-router-dom";
 import { project } from "@/data/project";
+import { useTranslation } from "@/i18n/LanguageContext";
+import Brand from "./Brand";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="border-t bg-primary text-primary-foreground">
+    <footer className="border-t border-border bg-card text-card-foreground">
       <div className="container py-10">
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <div className="text-center md:text-left">
-            <p className="font-heading text-lg font-bold">{project.teamName}</p>
-            <p className="text-sm opacity-80">{project.projectName}</p>
-            <p className="text-sm opacity-60">© {project.year}</p>
+          <div className="flex flex-col items-center gap-1 md:items-start">
+            <Brand size="sm" />
+            <p className="text-sm text-muted-foreground">{project.teamName}</p>
+            <p className="text-xs text-muted-foreground">
+              © {project.year} · {t.footer.rights}
+            </p>
           </div>
 
           <nav>
             <ul className="flex gap-6 text-sm">
               <li>
-                <Link to="/" className="opacity-80 hover:opacity-100 transition-opacity">
-                  Home
+                <Link to="/" className="text-muted-foreground hover:text-accent transition-colors">
+                  {t.nav.home}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="opacity-80 hover:opacity-100 transition-opacity">
-                  Contact
+                <Link to="/contact" className="text-muted-foreground hover:text-accent transition-colors">
+                  {t.nav.contact}
                 </Link>
               </li>
               <li>
-                <Link to="/zoom" className="opacity-80 hover:opacity-100 transition-opacity">
-                  Zoom
+                <Link to="/zoom" className="text-muted-foreground hover:text-accent transition-colors">
+                  {t.nav.zoom}
                 </Link>
               </li>
             </ul>
           </nav>
 
-          <div className="text-center md:text-right">
-            <a
-              href={`mailto:${project.contactEmail}`}
-              className="text-sm opacity-80 hover:opacity-100 transition-opacity"
-            >
-              {project.contactEmail}
-            </a>
-          </div>
+          <a
+            href={`mailto:${project.contactEmail}`}
+            className="text-sm text-muted-foreground hover:text-accent transition-colors"
+          >
+            {project.contactEmail}
+          </a>
         </div>
       </div>
     </footer>
