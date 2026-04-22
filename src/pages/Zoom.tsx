@@ -1,33 +1,31 @@
 import SectionHeader from "@/components/SectionHeader";
 import { project } from "@/data/project";
+import { useTranslation } from "@/i18n/LanguageContext";
 
 const Zoom = () => {
+  const { t } = useTranslation();
+
   return (
     <main className="py-16 md:py-20">
       <div className="container">
-        <SectionHeader title="Zoom" />
+        <SectionHeader title={t.zoom.title} />
 
         <div className="mx-auto max-w-lg text-center">
           {project.zoomLink ? (
-            // When a Zoom link is available, show it as a button
             <a
               href={project.zoomLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-md bg-primary px-8 py-4 text-lg font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Join Zoom Meeting
+              {t.zoom.join}
             </a>
           ) : (
-            // Placeholder until the link is added
-            <div className="rounded-lg border border-dashed bg-muted p-10">
-              <p className="text-lg text-muted-foreground">
-                The Zoom link for {project.teamName} / {project.projectName} will
-                be added here later.
-              </p>
-              <p className="mt-4 text-sm text-muted-foreground italic">
+            <div className="rounded-lg border border-dashed border-border bg-muted p-10">
+              <p className="text-lg text-muted-foreground">{t.zoom.placeholder}</p>
+              <p className="mt-4 text-sm italic text-muted-foreground">
                 {/* TODO: Set the zoomLink in src/data/project.ts when available */}
-                Update <code className="bg-background px-1 py-0.5 rounded text-xs">src/data/project.ts</code> to add the Zoom URL.
+                {t.zoom.editHint}
               </p>
             </div>
           )}

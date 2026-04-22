@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Sprint } from "@/data/sprints";
+import { useTranslation } from "@/i18n/LanguageContext";
 
 interface SprintCardProps {
   sprint: Sprint;
@@ -7,9 +8,10 @@ interface SprintCardProps {
 
 const SprintCard = ({ sprint }: SprintCardProps) => {
   const [expanded, setExpanded] = useState(false);
+  const { t } = useTranslation();
 
   return (
-    <div className="rounded-lg border bg-card shadow-sm">
+    <div className="rounded-lg border border-border bg-card shadow-sm">
       <button
         className="flex w-full items-center justify-between p-6 text-left"
         onClick={() => setExpanded(!expanded)}
@@ -20,7 +22,7 @@ const SprintCard = ({ sprint }: SprintCardProps) => {
             {sprint.title}
           </h3>
           <p className="mt-1 text-sm text-muted-foreground">
-            Duration: {sprint.duration}
+            {t.sprints.durationLabel}: {sprint.duration}
           </p>
         </div>
         <svg
@@ -37,19 +39,17 @@ const SprintCard = ({ sprint }: SprintCardProps) => {
       </button>
 
       {expanded && (
-        <div className="border-t px-6 pb-6 pt-4">
-          {/* Sprint Goal */}
+        <div className="border-t border-border px-6 pb-6 pt-4">
           <div className="mb-4">
             <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-              Sprint Goal
+              {t.sprints.goalHeading}
             </h4>
             <p className="mt-2 text-foreground">{sprint.goal}</p>
           </div>
 
-          {/* Backlog Items */}
           <div className="mb-4">
             <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-              Selected Product Backlog Items
+              {t.sprints.backlogHeading}
             </h4>
             <ul className="mt-2 space-y-1">
               {sprint.backlogItems.map((item, i) => (
@@ -58,7 +58,7 @@ const SprintCard = ({ sprint }: SprintCardProps) => {
                   {item.title}
                   {item.estimation !== null && (
                     <span className="text-xs text-muted-foreground">
-                      (est. {item.estimation})
+                      ({t.sprints.estimation} {item.estimation})
                     </span>
                   )}
                 </li>
@@ -66,12 +66,11 @@ const SprintCard = ({ sprint }: SprintCardProps) => {
             </ul>
           </div>
 
-          {/* Actionable Plan */}
           <div>
             <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-              Actionable Plan
+              {t.sprints.planHeading}
             </h4>
-            <pre className="mt-2 whitespace-pre-wrap text-sm text-foreground font-body">
+            <pre className="mt-2 whitespace-pre-wrap font-body text-sm text-foreground">
               {sprint.actionablePlan}
             </pre>
           </div>
