@@ -26,5 +26,11 @@ export const project = {
  * because it is presentation-only and language-agnostic.
  */
 export const features = [
+  { id: "misplaced", icon: "🔍" },
+  { id: "outOfStock", icon: "📦" },
+  { id: "intruder", icon: "🚨" },
+  { id: "docking", icon: "🎯" },
+  { id: "priceTag", icon: "🏷️" },
+  { id: "environmental", icon: "🌡️" },
   { id: "cloud", icon: "☁️" },
 ] as const;
