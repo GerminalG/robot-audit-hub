@@ -195,25 +195,10 @@ const sv: Dictionary = {
         description:
           'Roboten läser hyllskyltar med QR-koder. Om utrymmet ovanför en skylt är tomt skickas ett "Beställ mer"-MQTT-meddelande.',
       },
-      intruder: {
-        title: "Inkräktardetektering",
+      itemRecognition: {
+        title: "Objektigenkänning",
         description:
-          "Om kameran upptäcker mänsklig rörelse eller ett ansikte efter klockan 21:00 blinkar lysdioder och en 5-sekunders logg sparas i molnet.",
-      },
-      docking: {
-        title: "Precisionsdockning",
-        description:
-          "Använder ArUco-markörer för att exakt rikta in sig mot en laddstation gömd under en hylla.",
-      },
-      priceTag: {
-        title: "Validering av prislappar",
-        description:
-          "Jämför hyllpriset som läses av kameran med priset i molndatabasen och flaggar avvikelser.",
-      },
-      environmental: {
-        title: "Miljörevision",
-        description:
-          "Mäter ljusnivåer och temperatur i frysavdelningen för att säkerställa att kylanläggningar fungerar.",
+          "Datorseende identifierar produkter på hyllorna i realtid, vilket möjliggör korrekta lagerkontroller och upptäckt av felplacerade varor.",
       },
       cloud: {
         title: "Molnbaserat kommandocenter",
