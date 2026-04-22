@@ -81,7 +81,7 @@ const en: Dictionary = {
   nav: { home: "Home", contact: "Contact", zoom: "Zoom", toggleMenu: "Toggle menu" },
   hero: {
     description:
-      "Scanos is a retail robotics and cloud monitoring project focused on after-hours store auditing. The system patrols a store autonomously, monitors inventory conditions, identifies misplaced products, detects security risks, and reports issues to a central web-based command center.",
+      "Scanos is a retail robotics project that uses computer vision to recognize items on shelves, flag misplaced products, and raise out-of-stock alerts — all reported back to a cloud command center where managers can monitor the store at a glance.",
   },
   goal: {
     title: 'The "Retail Inventory & Security" Auditor',
@@ -169,7 +169,7 @@ const sv: Dictionary = {
   nav: { home: "Hem", contact: "Kontakt", zoom: "Zoom", toggleMenu: "Växla meny" },
   hero: {
     description:
-      "Scanos är ett robotik- och molnövervakningsprojekt för detaljhandeln med fokus på revision av butiker efter stängning. Systemet patrullerar butiken självständigt, övervakar lagerförhållanden, identifierar felplacerade varor, upptäcker säkerhetsrisker och rapporterar problem till ett centralt webbaserat kommandocenter.",
+      "Scanos är ett robotikprojekt för detaljhandeln som använder datorseende för att känna igen varor på hyllorna, markera felplacerade produkter och utlösa slut-i-lager-varningar — allt rapporteras till ett molnbaserat kommandocenter där chefer kan övervaka butiken med en blick.",
   },
   goal: {
     title: 'Granskaren för "Lager & Säkerhet" inom detaljhandeln',
@@ -257,7 +257,7 @@ const zh: Dictionary = {
   nav: { home: "首页", contact: "联系我们", zoom: "Zoom", toggleMenu: "切换菜单" },
   hero: {
     description:
-      "Scanos 是一个面向零售业的机器人与云监控项目，专注于营业后门店审计。系统可自主巡店、监控库存状况、识别错放商品、检测安全风险，并将问题上报至基于网页的中央指挥中心。",
+      "Scanos 是一个面向零售业的机器人项目，利用计算机视觉识别货架上的商品、标记错放产品并发出缺货提醒——所有信息都会回传到云端指挥中心，让管理者一目了然地掌握门店状况。",
   },
   goal: {
     title: "“零售库存与安全”审计员",
