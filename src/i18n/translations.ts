@@ -81,7 +81,7 @@ const en: Dictionary = {
   nav: { home: "Home", contact: "Contact", zoom: "Zoom", toggleMenu: "Toggle menu" },
   hero: {
     description:
-      "Scanos is a retail robotics and cloud monitoring project focused on after-hours store auditing. The system patrols a store autonomously, monitors inventory conditions, identifies misplaced products, detects security risks, and reports issues to a central web-based command center.",
+      "Scanos is a retail robotics project that uses computer vision to recognize items on shelves, flag misplaced products, and raise out-of-stock alerts — all reported back to a cloud command center where managers can monitor the store at a glance.",
   },
   goal: {
     title: 'The "Retail Inventory & Security" Auditor',
