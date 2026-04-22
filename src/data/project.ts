@@ -15,8 +15,7 @@ export const project = {
 
   contactEmail: "fcam@kth.se",
 
-  // TODO: Replace with actual Zoom link when available
-  zoomLink: null as string | null,
+  zoomLink: "https://kth-se.zoom.us/j/67349834926" as string | null,
 
   year: new Date().getFullYear(),
 };

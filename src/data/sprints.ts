@@ -58,14 +58,31 @@ Web app — Frontend:
   },
   {
     number: 2,
-    title: "Sprint 2",
+    title: "Sprint 2 Backlog",
     duration: "TBD",
-    goal: "Sprint 2 goal to be defined.",
+    goal: "Allow the robot to be controlled and its vision to be monitored remotely, and recognize the book object.",
     backlogItems: [
-      { title: "Placeholder backlog item 1", estimation: null },
-      { title: "Placeholder backlog item 2", estimation: null },
+      { title: "(1.1) Control robot with app (2 people)", estimation: null },
+      { title: "(2) Recognise a book (2 people)", estimation: null },
+      { title: "(9) Live video display (1 person)", estimation: null },
+      { title: "(3) Keep track of stock in inventory (1 person)", estimation: null },
+      { title: "Create website (1 person)", estimation: null },
     ],
-    actionablePlan: "Actionable plan to be added.",
+    actionablePlan: `(1.1) Control robot with app — 2 people:
+• Button press → Firebase → backend → Raspberry Pi (→ Coral Dev Board)
+
+(2) Recognise a book — 2 people:
+• Collect more images (several books, background distractions)
+• Model training
+
+(9) Live video display — 1 person:
+• Implement communication protocol across Coral Dev Board and Raspberry Pi
+• Transmit live video across layers: Coral Dev → Raspberry Pi → backend → interface
+
+(3) Keep track of stock in inventory — 1 person:
+• Debug
+
+Create website — 1 person.`,
   },
   {
     number: 3,
